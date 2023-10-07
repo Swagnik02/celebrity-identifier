@@ -1,125 +1,60 @@
-Certainly! Here's the final README.md file for your GitHub project:
+Certainly, let's update the section to make it clear and add proper line breaks:
 
 ```markdown
-# Celebrity Face Recognition using VGGFace Model
+## Installation
 
-<h2 style="font-size:40px; font-family: Garamond; font-weight: normal; background-color: #007580; color: #fed049; text-align: center; border-radius: 5px 5px; padding: 5px"> Celebrity Face Recognition using VGGFace Model </h2>
+Follow these steps to set up and run the project:
 
-## Table of Contents
-1. [Overview](#1.0)
-2. [Installation](#2.0)
-   - [Clone the Repository](#2.1)
-   - [Create Virtual Environment and Install Dependencies](#2.2)
-   - [Run the Project](#2.3)
-3. [Data Collection](#3.0)
-4. [Feature Engineering](#4.0)
-   - [VGG Face Model](#4.1)
-   - [Generate Embeddings for Each Image](#4.2)
-   - [Plot Images and Calculate Distances](#4.3)
-   - [Create Train and Test Sets](#4.4)
-   - [Reduce Dimensions using PCA](#4.5)
-5. [Model Building and Validation](#5.0)
-   - [Build a Machine Learning Classifier](#5.1)
-   - [Validate Celebrity Images](#5.2)
-6. [Conclusion](#6.0)
-
-## 1. Overview <a id="1.0"></a>
-
-### Project Description
-
-In this hands-on project, the goal is to build a face identification model to recognize faces.
-
-### Data Description
-
-**Aligned Face Dataset from Pinterest**
-
-This dataset contains 17534 images for 100 people. All images are taken from 'Pinterest' and aligned using the dlib library.
-
-### Objective
-
-In this problem, we use a pre-trained model trained on Face recognition to recognize similar faces. Here, we are particularly interested in recognizing whether two given faces are of the same person or not.
-
-## 2. Installation <a id="2.0"></a>
-
-To set up and run this project, follow these steps:
-
-### 2.1 Clone the Repository
-
-1. Clone the repository to your local machine.
+1. Clone the repository to your local machine:
 
    ```bash
    git clone https://github.com/yourusername/celebrity-face-recognition.git
-   ```
-
-2. Navigate to the project directory.
-
-   ```bash
    cd celebrity-face-recognition
    ```
 
-### 2.2 Create Virtual Environment and Install Dependencies
-
-3. Create a virtual environment and install the required packages from `requirements.txt`.
+2. Create a virtual environment and install dependencies:
 
    ```bash
-   # Define the name of the virtual environment
-   ENV_NAME="celeb_env"
-
-   # Create the virtual environment
-   python -m venv "$ENV_NAME"
-
-   # Activate the virtual environment
-   source "$ENV_NAME"/bin/activate
-
-   # Install the required packages
+   python -m venv celeb_env
+   source celeb_env/bin/activate
    pip install -r requirements.txt
-
-   # Deactivate the virtual environment
    deactivate
    ```
 
-   incase requirements is not working try this command in cmd after activating your env to install all the required modules 
+3. Download the VGGFace model weights file from [this link](https://www.kaggle.com/datasets/evertwydoodt/vgg-face-weights).
 
-   ``` pip install h5py numpy matplotlib scikit-learn opencv-python tensorflow```
+4. Create a "Data Sources" folder inside the root directory of the project, if it doesn't already exist.
 
-### 2.3 Run the Project
+5. Organize your data as shown below inside the "Data Sources" folder:
+   place the vgg_face_weights.h5 file inside the Data Sources folder as previewed here 
+   
+   ![Data Sources](https://github.com/Swagnik02/celebrity-identifier/assets/91018814/eff7441d-7c03-456f-87ea-ce0d98a3f9dc)
 
-4. Run the provided script to train the model and perform celebrity recognition.
+6. Embeddings
+In case you want to create new embeddings to add more persons, follow these steps:
 
-   ```bash
-   # Replace with your script name if different
-   bash run_recognition.sh
-   ```
+1. Comment out this part:
+   ![image](https://github.com/Swagnik02/celebrity-identifier/assets/91018814/1492b913-087a-4d90-a85f-7ddac71ec257)
 
-5. Follow the project documentation for more details on how to use the model.
+2. Remove comments from this part:
+   ![image](https://github.com/Swagnik02/celebrity-identifier/assets/91018814/e3dd5f78-9a4a-4b13-98f0-cf4a7939b969)
 
-## 3. Data Collection <a id="3.0"></a>
+3. Add the original 105 pins file from here: [Kaggle Pins Face Recognition Dataset](https://www.kaggle.com/datasets/hereisburak/pins-face-recognition)
 
-...
+4. Extract the files inside the folder called "Data Sources" in the root directory.
+    as previewed here 
+   
+   ![Data Sources](https://github.com/Swagnik02/celebrity-identifier/assets/91018814/eff7441d-7c03-456f-87ea-ce0d98a3f9dc)
 
-## 4. Feature Engineering <a id="4.0"></a>
-
-...
-
-## 5. Model Building and Validation <a id="5.0"></a>
-
-...
-
-## 6. Conclusion <a id="6.0"></a>
-
-...
+Note: In order to reduce training time, I reduced the number of persons to 5. Similarly, you can do it, but be cautious not to reduce the number of images, as it drastically reduces efficiency.
 
 ## Usage
 
-To use this project, refer to the Usage section in the project documentation for detailed instructions on how to set up and run the code.
+Refer to the project documentation for detailed instructions on using the model.
 
 ## Contributing
 
-Contributions are welcome! If you'd like to improve the project or fix any issues, please fork the repository and create a pull request.
-<!-- 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Feel free to contribute to this project by forking the repository and creating a pull request.
 ```
 
-Please replace `"https://github.com/yourusername/celebrity-face-recognition.git"` with the actual URL of your GitHub repository, and adjust any other details as needed. This README.md file provides an organized structure for your project's documentation. -->
+In this updated section, I've added proper line breaks and clarified the steps for downloading the VGGFace model weights and organizing the project folder structure for your dataset.
