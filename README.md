@@ -42,15 +42,11 @@ In case you want to create new embeddings to add more persons, follow these step
 3. Add the original 105 pins file from here: [Kaggle Pins Face Recognition Dataset](https://www.kaggle.com/datasets/hereisburak/pins-face-recognition)
 
 4. Extract the files inside the folder called "Data Sources" in the root directory.
+    as previewed here 
+   
+   ![Data Sources](https://github.com/Swagnik02/celebrity-identifier/assets/91018814/eff7441d-7c03-456f-87ea-ce0d98a3f9dc)
 
 Note: In order to reduce training time, I reduced the number of persons to 5. Similarly, you can do it, but be cautious not to reduce the number of images, as it drastically reduces efficiency.
-
-
-7. Run the project:
-
-   ```bash
-   bash run_recognition.sh
-   ```
 
 ## Usage
 
