@@ -1,12 +1,6 @@
-Sure, here's a simplified version of the README.md file for your GitHub project:
+Certainly, let's update the section to make it clear and add proper line breaks:
 
 ```markdown
-# Celebrity Face Recognition using VGGFace Model
-
-## Overview
-
-This project focuses on building a face recognition model to identify celebrities' faces using a pre-trained VGGFace model. It can determine whether two given faces belong to the same person or not.
-
 ## Installation
 
 Follow these steps to set up and run the project:
@@ -27,21 +21,25 @@ Follow these steps to set up and run the project:
    deactivate
    ```
 
-3. Run the project:
+3. Download the VGGFace model weights file from [this link](https://www.kaggle.com/datasets/evertwydoodt/vgg-face-weights).
+
+4. After downloading the weights file, place it in the root directory of your project (the same directory as this README file).
+
+5. Create a "Data Sources" folder inside the root directory of the project, if it doesn't already exist.
+
+6. Organize your data as shown below inside the "Data Sources" folder:
+   
+   ![Data Sources](https://github.com/Swagnik02/celebrity-identifier/assets/91018814/eff7441d-7c03-456f-87ea-ce0d98a3f9dc)
+
+   - Replace "Celebrity1", "Celebrity2", etc., with the names of the celebrities you want to recognize.
+   - Place the images of each celebrity in their respective folders.
+   - Ensure that each folder contains only images of one celebrity.
+
+7. Run the project:
 
    ```bash
    bash run_recognition.sh
    ```
-
-## Data Collection
-
-You can add new celebrities by following these steps:
-
-1. Replace embedding code with data collection code.
-2. Download the original 105-class Pins dataset from [here](https://www.kaggle.com/datasets/hereisburak/pins-face-recognition).
-3. Extract the files inside the "Data Sources" folder.
-
-Note: Avoid reducing the number of images for each celebrity, as it can affect recognition accuracy.
 
 ## Usage
 
@@ -52,4 +50,4 @@ Refer to the project documentation for detailed instructions on using the model.
 Feel free to contribute to this project by forking the repository and creating a pull request.
 ```
 
-Replace `"https://github.com/yourusername/celebrity-face-recognition.git"` with the actual URL of your GitHub repository. This simplified README provides a clear overview of your project and installation instructions. You can expand on the sections and add more details as needed.
+In this updated section, I've added proper line breaks and clarified the steps for downloading the VGGFace model weights and organizing the project folder structure for your dataset.
