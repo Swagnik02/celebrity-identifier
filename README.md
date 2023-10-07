@@ -51,6 +51,7 @@ To set up and run this project, follow these steps:
    git clone https://github.com/yourusername/celebrity-face-recognition.git
    ```
 
+
 2. Navigate to the project directory.
 
    ```bash
@@ -91,11 +92,31 @@ To set up and run this project, follow these steps:
    bash run_recognition.sh
    ```
 
+download the model from here 
+https://www.kaggle.com/datasets/evertwydoodt/vgg-face-weights
+and paste the vgg_face_weights.h5 file here
+
+create a Data Sources folder inside the root dir
+inside paste the file like this 
+![image](https://github.com/Swagnik02/celebrity-identifier/assets/91018814/eff7441d-7c03-456f-87ea-ce0d98a3f9dc)
+
 5. Follow the project documentation for more details on how to use the model.
 
 ## 3. Data Collection <a id="3.0"></a>
 
-...
+in case you want to create new embedding to add more person comment out this part:
+![image](https://github.com/Swagnik02/celebrity-identifier/assets/91018814/1492b913-087a-4d90-a85f-7ddac71ec257)
+
+and remove comments from this part 
+![image](https://github.com/Swagnik02/celebrity-identifier/assets/91018814/e3dd5f78-9a4a-4b13-98f0-cf4a7939b969)
+
+and add the original 105 pins file from here 
+https://www.kaggle.com/datasets/hereisburak/pins-face-recognition
+
+and extarct the files inside the folder called Data Sources in the root dir 
+In order to reduce training time i reduced the number of persons to 5 similarly you can do it 
+
+Alert!! dont reduce the number of images it reduces the efficiency drastically !
 
 ## 4. Feature Engineering <a id="4.0"></a>
 
