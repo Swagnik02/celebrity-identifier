@@ -23,17 +23,28 @@ Follow these steps to set up and run the project:
 
 3. Download the VGGFace model weights file from [this link](https://www.kaggle.com/datasets/evertwydoodt/vgg-face-weights).
 
-4. After downloading the weights file, place it in the root directory of your project (the same directory as this README file).
+4. Create a "Data Sources" folder inside the root directory of the project, if it doesn't already exist.
 
-5. Create a "Data Sources" folder inside the root directory of the project, if it doesn't already exist.
-
-6. Organize your data as shown below inside the "Data Sources" folder:
+5. Organize your data as shown below inside the "Data Sources" folder:
+   place the vgg_face_weights.h5 file inside the Data Sources folder as previewed here 
    
    ![Data Sources](https://github.com/Swagnik02/celebrity-identifier/assets/91018814/eff7441d-7c03-456f-87ea-ce0d98a3f9dc)
 
-   - Replace "Celebrity1", "Celebrity2", etc., with the names of the celebrities you want to recognize.
-   - Place the images of each celebrity in their respective folders.
-   - Ensure that each folder contains only images of one celebrity.
+6. Embeddings
+In case you want to create new embeddings to add more persons, follow these steps:
+
+1. Comment out this part:
+   ![image](https://github.com/Swagnik02/celebrity-identifier/assets/91018814/1492b913-087a-4d90-a85f-7ddac71ec257)
+
+2. Remove comments from this part:
+   ![image](https://github.com/Swagnik02/celebrity-identifier/assets/91018814/e3dd5f78-9a4a-4b13-98f0-cf4a7939b969)
+
+3. Add the original 105 pins file from here: [Kaggle Pins Face Recognition Dataset](https://www.kaggle.com/datasets/hereisburak/pins-face-recognition)
+
+4. Extract the files inside the folder called "Data Sources" in the root directory.
+
+Note: In order to reduce training time, I reduced the number of persons to 5. Similarly, you can do it, but be cautious not to reduce the number of images, as it drastically reduces efficiency.
+
 
 7. Run the project:
 
